@@ -19,7 +19,7 @@
              }
             else if (computerSelection === "rock") {result={message:"You lose!Rock beats Scissors", playerScore:0, computerScore:1}}
                 else if (computerSelection === "paper") {result={message:"You win! Scissors beats Paper", playerScore:1, computerScore:0}}
-       console.log (result);
+       console.log (result["message"]);
        return result;         
     }
 
