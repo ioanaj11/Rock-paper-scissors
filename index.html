@@ -6,11 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors!</title>
 </head>
+
+<style>
+    h1{
+        font-size: 100px;;
+        color: black;
+        text-align: center;
+    }
+
+    .playerSelection{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    button{
+        font-size: medium;
+        font-style: bold;
+        color: yellowgreen;
+        background-color: black;
+        padding: 20px;
+        margin-bottom: 50px;
+        width:160px;
+    }
+
+    .result{
+        border: 2px solid;
+        border-color: black;
+        width: 70%;
+        height: 40px;
+        margin: auto;
+    }
+</style>
+
 <body>
     <h1>Beat the machine!</h1>
-    <button class="rock">ROCK</button>
-    <button class="paper">PAPER</button>
-    <button class="scissors">SCISSSORS</button>
+    <div class="playerSelection">
+        <button class="rock">ROCK</button>
+        <button class="paper">PAPER</button>
+        <button class="scissors">SCISSSORS</button>
+    </div>
+    <div class="result"></div>
 </body>
 </html>
 
@@ -35,6 +71,8 @@
              }
             else if (computerSelection === "rock") {result={message:"You lose!Rock beats Scissors", playerScore:0, computerScore:1}}
                 else if (computerSelection === "paper") {result={message:"You win! Scissors beats Paper", playerScore:1, computerScore:0}}
+       const div=document.createElement('div');
+
        console.log (result["message"]);
        return result;         
     }
