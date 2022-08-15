@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors!</title>
+</head>
+<body>
+    <h1>Beat the machine!</h1>
+    <button class="rock">ROCK</button>
+    <button class="paper">PAPER</button>
+    <button class="scissors">SCISSSORS</button>
+</body>
+</html>
+
 <script>
     function getComputerChoice(){
         let options=["rock", "paper", "scissors"];
@@ -23,17 +39,8 @@
        return result;         
     }
 
-    function game(){
-        let score={"Your Score" :0, "Computer Score": 0};
-        for (let i=0; i<5; i++){
-            playRound(prompt("Make your choice: rock/paper/scissors!"), getComputerChoice());
-            score["Your Score"] += result["playerScore"];
-            score["Computer Score"] += result["computerScore"];
-            console.log(score);
-        }
-        if (score["Your Score"]>score["Computer Score"]) console.log("You win!!!")
-            else console.log("You lose!");
-    }
-  
-   game();
-</script>
+    const buttons=document.querySelectorAll("button");
+    buttons.forEach((button)=> {button.addEventListener('click', () => playRound(button.classList.value, getComputerChoice()))});
+
+    
+    </script>
