@@ -1,7 +1,24 @@
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/home/ioana/repos/Rock-paper-scissors/man-vs-machine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 h1{
     font-size: 100px;;
     color: black;
     text-align: center;
+   }
+
+p{
+    font-size:40px;
+    color:black;
+    text-align: center;
+    font-style: bold;;
 }
 
 .playerSelection{
@@ -10,31 +27,76 @@ h1{
     gap: 30px;
 }
 
-button{
-    font-size: medium;
+.playerSelection button{
+    font-size: 20px;
     font-style: bold;
-    color: yellowgreen;
-    background-color: black;
+    color: rgb(99, 111, 214);
+    background-color:rgb(32, 32, 32);
     padding: 20px;
     margin-bottom: 50px;
+    margin-top:30px;
     width:160px;
+    }
+
+.playerSelection button:hover{
+    transform: scale(1.02);
+}
+
+.playerSelection button:active {
+    box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(4px);
+    border:2px solid;
+    border-color: rgb(59, 32, 211);
 }
 
 .result{
     display:flex;
     border: 4px solid;
     border-color: black;
-    width: 70%;
+    width:550px;
     height: 40px;
-    margin: auto;
+    margin-top: 20px;
     font-size: 30px;
     font-style: bold;
     justify-content: center;
 }
 
 .score{
-    padding: 150px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 60px;
+    font-style: bold;
+}
+
+.finalResult{
     text-align: center;
     font-size: 50px;
     font-style: bold;
+    margin-top: 40px;
+}
+
+.newGame{
+    display: flex;
+    justify-content: center;
+}
+
+.restartBtn{
+    font-size: 30px;
+    font-style: bold;
+    color: black;
+    background-color: rgb(99, 111, 214);
+    width:200px;
+    height: 45px;
+    border: 3px solid;
+    border-color: black;
+    margin-top:24px;
+}
+
+.restartBtn:hover {
+    transform: scale(1.02);
+}
+
+.restartBtn:active {
+    box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(4px);
 }
