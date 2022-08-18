@@ -48,7 +48,7 @@ function playRound(playerSelection, computerSelection){
             const newGame=document.querySelector('.newGame');
             
             const restartBtn=document.createElement('a');
-            restartBtn.setAttribute('href', 'file:///home/ioana/repos/Rock-paper-scissors/index.html');
+            restartBtn.setAttribute('href', 'index.html');
            
             newGame.appendChild(restartBtn);
             restartBtn.appendChild(newGameBtn);
