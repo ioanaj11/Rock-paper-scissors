@@ -3,7 +3,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/home/ioana/repos/Rock-paper-scissors/man-vs-machine.jpg);
+    background-image: url(man-vs-machine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
